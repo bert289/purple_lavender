@@ -9,22 +9,20 @@
     <link rel="stylesheet" href="css/w3_theme.css">
     <style>
     .showcase{
+      height: 683px;
       background-image: url("img/showcase.jpg");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center top;
       background-attachment: fixed;
-      background-size: cover;
+      background-size: contain;
+    }
+
+    .showcase h1{
     }
     </style>
   </head>
 
   <body class="w3-theme-dark">
-    <!-- CREATE A 3 COLUMN PAGE -->
-    <div class="w3-row">
-      <div class="w3-col l3 m2 s1"><p></p></div>
-        <!-- CENTRAL GRID COLUMN ALL CONTENT -->
-        <div class="w3-col l6 m8 s10">
-
           <!-- Navbar (sit on top) -->
           <div class="w3-bar w3-theme-dark">
             <span class="w3-bar-item w3-wide">
@@ -39,8 +37,8 @@
             </span>
           </div> <!-- Navbar -->
 
-          <section class="w3-container showcase">
-            <h1 style="padding-top:200px">ELEGANT FASHION</h1>
+          <section class="w3-container w3-center showcase">
+            <h1>ELEGANT FASHION</h1>
           </section>
 
           <section class="w3-container w3-theme-d4">
@@ -56,10 +54,5 @@
           <footer class="w3-container w3-center w3-theme-dark">
             <p>Copyright 2020<p>
           </footer>
-        </div> <!-- end col -->
-
-        <!-- right side column -->
-        <div class="w3-col l3 m2 s1"><p></p></div>
-      </div> <!-- end row -->
   </body>
 </html>
