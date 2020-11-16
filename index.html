@@ -11,7 +11,7 @@
 <style>
 .w3-sidebar a {font-family: "Jost", sans-serif; text-decoration: none; }
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Jost", sans-serif; color: #660099}
-.cursive {font-family: "Alex Brush", cursive; font-size: 30px; font-weight: bold;}
+.cursive {font-family: 'Alex Brush', cursive; font-size: 30px; font-weight: bold;}
 
 div.product{
   height: 350px;
@@ -19,6 +19,16 @@ div.product{
 
 img.product{
   width: 100%;
+}
+
+a.invert{
+  color: #660099;
+  background-color: white;
+}
+a.zalo {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
 }
 
 </style>
@@ -59,7 +69,7 @@ img.product{
   <header class="w3-container w3-xlarge">
     <h3 class="w3-wide w3-left">
       <img src="img/fashion_icon_purple.png" alt="" style="height:30px; float:left;border-radius:0%; margin-right:10px">
-      PURPLE LAVENDER<i class="cursive"><b> - Fashion Design </b></i>
+      <b>PURPLE LAVENDER</b><i class="w3-hide-small cursive"><b> - Fashion Design </b></i>
     </h3>
     <h3 class="w3-right cursive"></h3>
   </header>
@@ -67,11 +77,11 @@ img.product{
   <!-- Image header -->
   <div class="w3-display-container w3-container">
     <img src="img/showcase.jpg" alt="Shopping" style="width:100%">
-    <div class="w3-display-topleft w3-text-black" style="padding:24px 48px">
-      <h1 class="w3-jumbo w3-hide-small">Own Your Own Style!</h1>
-      <h1 class="w3-hide-large w3-hide-medium">Own Your Own Style!</h1>
+    <div class="w3-display-topleft w3-text-black" style="padding:0px 48px">
+      <h1 class="w3-xxxlarge w3-hide-small">Own Your Own Style!</h1>
+      <h1 class="w3-xlarge w3-hide-large w3-hide-medium">Own Your Own Style!</h1>
       <h2 class="w3-hide-small w3-text-white">New Year Arrivals!</h2>
-      <p><a href="#gallery" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+      <p><a href="#gallery" class="w3-button w3-black w3-padding-large w3-small">SHOP NOW</a></p>
     </div>
   </div>
 
@@ -124,12 +134,13 @@ img.product{
   </div>
 
   <!-- Footer -->
-  <footer class="w3-padding-32 w3-theme w3-small w3-center" id="footer">
-    <div class="w3-row-padding">
-        <span><a href="https://goo.gl/maps/Tk2VFJmv2N6yanY77" target="_blank"<i class="fa fa-fw fa-map-marker w3-large"></i></a> Purple Lavender</span>
-        <span><a href="tel:+84(0)902888087"><i class="fa fa-fw fa-phone w3-hover-opacity w3-large"></i></a> +84(0)902888087</span>
-        <span><a href="mailto:info@purplelavender.fashion"><i class="fa fa-fw fa-envelope w3-hover-opacity w3-large"></i></a> info@purplelavender.fashion</span>
-        <span><a href="http://facebook.com/Fashion-design-347192612874766/posts" target="_blank"><i class="fa fa-fw fa-facebook-official w3-hover-opacity w3-large"></i></a>Purple Lavender</span>
+  <footer class="w3-padding-32 w3-theme w3-center" id="footer">
+    <div class="w3-row-padding w3-small">
+        <span><a href="https://goo.gl/maps/Tk2VFJmv2N6yanY77" target="_blank"<i class="fa fa-fw fa-map-marker w3-large"></i></a><span class="w3-hide-small"> Purple Lavender</span></span>
+        <span><a href="tel:+84(0)902888087"><i class="fa fa-fw fa-phone w3-hover-opacity w3-large"></i></a><span class="w3-hide-small"> +84(0)902888087</span></span>
+        <span><a href="mailto:info@purplelavender.fashion"><i class="fa fa-fw fa-envelope w3-hover-opacity w3-large"></i></a><span class="w3-hide-small"> info@purplelavender.fashion</span></span>
+        <span><a href="http://facebook.com/Fashion-design-347192612874766/posts" target="_blank"><i class="fa fa-fw fa-facebook-official w3-hover-opacity w3-large"></i></a><span class="w3-hide-small"> Purple Lavender</span></span>
+        <!--span><a href="http://chat.zalo.me" class="zalo invert" target="_blank">Z</a></span-->
     </div>
     <div class="w3-padding w3-center">
       <p>copyright 2020</p>
