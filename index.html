@@ -4,12 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/w3_theme.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;500&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .w3-sidebar a {font-family: "Jost", sans-serif}
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Jost", sans-serif;}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Jost", sans-serif; color: #660099}
+h1 {font-family: "Alex Brush", cursive;}
 
 div.product{
   height: 350px;
@@ -23,14 +25,11 @@ img.product{
 <body class="w3-content" style="max-width:1200px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:150px" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-theme w3-collapse w3-top" style="z-index:3;width:150px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <h3 class="w3-wide">
-      <img src="img/fashion_icon_black.png" alt="" style="height:30px; float:left;border-radius:0%; margin-right:10px">
-    </h3>
   </div>
-  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+  <div class="w3-padding-64 w3-large w3-theme" style="font-weight:bold">
     <a href="#" class="w3-bar-item w3-button">Shirts</a>
     <a href="#" class="w3-bar-item w3-button">Dresses</a>
     <a href="#" class="w3-bar-item w3-button">Blazers</a>
@@ -38,10 +37,10 @@ img.product{
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24 w3-wide">
-    <img src="img/fashion_icon_head.png" alt="" style="height:30px; float:left;border-radius:0%; margin-right:10px">
-  </div>
+<header class="w3-bar w3-top w3-hide-large w3-theme w3-xlarge">
+  <!--div class="w3-bar-item w3-padding-24 w3-wide">
+    <img src="img/fashion_icon_black.png" alt="" style="height:30px; float:left;border-radius:0%; margin-right:10px">
+  </div-->
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
 </header>
 
@@ -56,7 +55,10 @@ img.product{
 
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
-    <p class="w3-left">PURPLE LAVENDER</p>
+    <h3 class="w3-wide w3-left">
+      <img src="img/fashion_icon_purple.png" alt="" style="height:30px; float:left;border-radius:0%; margin-right:10px">
+      PURPLE LAVENDER
+    </h3>
     <p class="w3-right"></p>
   </header>
 
@@ -64,14 +66,14 @@ img.product{
   <div class="w3-display-container w3-container">
     <img src="img/showcase.jpg" alt="Shopping" style="width:100%">
     <div class="w3-display-topleft w3-text-black" style="padding:24px 48px">
-      <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
-      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
-      <h1 class="w3-hide-small">COLLECTION 2021</h1>
+      <h1 class="w3-jumbo w3-hide-small">Own Your Style</h1>
+      <h1 class="w3-hide-large w3-hide-medium">Own Your Style</h1>
+      <h2 class="w3-hide-small w3-text-white">New Arrivals!</h2>
       <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
     </div>
   </div>
 
-  <div class="w3-container w3-text-grey" id="jeans">
+  <div class="w3-container" id="jeans">
     <p>8 items</p>
   </div>
 
@@ -130,14 +132,14 @@ img.product{
 
   <!-- Subscribe section -->
   <div class="w3-container w3-black w3-padding-32">
-    <h1>Subscribe</h1>
+    <h2>Subscribe</h2>
     <p>To get special offers and VIP treatment:</p>
     <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+    <button type="button" class="w3-button w3-theme w3-margin-bottom">Subscribe</button>
   </div>
 
   <!-- Footer -->
-  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+  <footer class="w3-padding-64 w3-theme w3-small w3-center" id="footer">
     <div class="w3-row-padding">
         <span><a href="https://goo.gl/maps/Tk2VFJmv2N6yanY77" target="_blank"<i class="fa fa-fw fa-map-marker w3-large"></i></a> Purple Lavender</span>
         <span><a href="tel:+84(0)902888087"><i class="fa fa-fw fa-phone w3-hover-opacity w3-large"></i></a> +84(0)902888087</span>
